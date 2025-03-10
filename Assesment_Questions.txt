@@ -1,0 +1,51 @@
+1	Button Press to Control LED	
+"Objective: Turn on an LED when a push button is pressed.
+Task: Use a push button (e.g., B1 on PA0) to turn on the LED (e.g., LD4 on PD12) and turn it off when the button is released."
+
+2	Blink an LED	
+"Objective: Blink all LED’s connected to GPIOD pins (e.g., LD4 connected to PD12 etc).
+Task: Toggle the LED on and off with a 1-second delay."
+
+3	Timer Interrupt	
+"Objective: Use timers to generate periodic interrupts.
+Task: Configure TIM2 to generate an interrupt every 1 second. In the interrupt service routine, toggle an LED or send a message over UART."
+
+4	Delay Implementation	
+"Objective: Create a delay function.
+ Task: Write a function to implement a delay using a simple loop. Use this delay in your program to blink an LED with specific timing"
+ 
+5	LED Toggle with Button Hold	
+"Objective: Toggle an LED when a button is held down for a certain duration.
+Task: Program the microcontroller to toggle an LED (LD4 on PD12) only if the button (B1 on PA0) is pressed for more than 2 seconds."
+
+6	External Interrupt	
+"Objective: Handle an external interrupt.
+Task: Configure an external interrupt on PA0 (e.g., push button) to trigger an interrupt service routine (ISR). In the ISR, toggle an LED or print a message to the UART."
+
+7	UART Communication	
+"Objective: Send a message over UART.
+Task: Send a string of text (e.g., ""Hello STM32F407"") over UART and display it on a terminal (e.g., using STM32CubeIDE or a terminal software like Tera Term)."
+
+8	PWM Control of LED	
+"Objective: Control the brightness of an LED using PWM.
+Task: Use the PWM output (e.g., TIM3 with PA6) to control the brightness of an LED."
+
+9	ADC Conversion Interrupt	
+"Objective: Generate an interrupt when an ADC conversion is complete.
+Task: Configure the ADC to trigger an interrupt after a conversion completes. In the ISR, read the ADC value and use it to control an LED (e.g., brightness via PWM)."
+
+10	SysTick Timer Interrupt (LED Toggle)	
+"Objective: Use the SysTick timer interrupt to toggle an LED.
+Task: Use the SysTick timer to generate an interrupt every 500 ms. In the ISR, toggle an LED (e.g., LD4 on PD12)."
+
+11	I2C Interrupt (Transmit Data)	
+"Objective: Use an I2C interrupt to transmit data when the bus is ready.
+Task: Configure the I2C peripheral to generate an interrupt when it's ready to transmit. In the ISR, send data over I2C to a connected device."
+
+12	PWM Interrupt (Change Duty Cycle)	
+"Objective: Change the duty cycle of a PWM signal based on an interrupt.
+Task: Set up a timer to generate interrupts at a regular interval. In the ISR, adjust the PWM duty cycle to change the brightness of an LED (e.g., LD4 on PD12)."
+
+13	Basic CAN Initialization	
+"Objective: Initialize CAN1 interface in basic mode.
+Task: Write a simple program to initialize the CAN1 peripheral on the STM32F407. The program should configure the CAN interface (e.g., bit rate, filter) and put the CAN peripheral in the normal mode."
